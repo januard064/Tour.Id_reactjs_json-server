@@ -10,6 +10,9 @@ Tour.Id is built using reactjs as its frontend by utilizing several libraries an
 The way to run it is by: json-server --watch tour.json -p 3001 -d 2000
 The calling process is given a waiting time of 2 seconds to see the loading process.
 
+## Demo Project
+https://user-images.githubusercontent.com/59024388/139908660-4e1eab58-d384-4d86-b5f8-ef47f5e7a47a.mp4
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
