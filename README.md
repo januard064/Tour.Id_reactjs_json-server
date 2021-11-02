@@ -1,3 +1,15 @@
+#Tour.Id
+##Tour.Id Description
+Tour.id is a travel services system . With Tour.id, companies can easily offer tour packages, convey information about tours and travel and carry out promotions. In addition, users can easily and quickly plan trips with packages provided by the company or by customizing the desired trip.
+
+##Tour.Id Features
+Tour.Id features will be developed to support this idea. Tour Package Features feature, service providers will provide hotels, accommodation, schedule of events, and activities for customers to take a tour. The price for this package is determined by the service provider in accordance with the facilities that will be obtained by the user. Users will only fill in the date of arrival and date of return and the number of people. Promo Features will be several product promos that will be given to customers, starting from discounting tour package prices, hotel ticket prices, or holiday specials. This feature will be very profitable and attract the attention of customers. Custom Travel Features, in this feature users can choose their own facilities offered (hotels, accommodation, etc.) according to their wishes, different from the tour packages that have been determined by the service provider. Travel Blog feature, users can see a description of a package / tourist destination offered by the application. Other than that. users who have purchased a tour package can also provide reviews regarding the impressions and experiences of the trip that has been made.
+
+##Environment
+Tour.Id is built using reactjs as its frontend by utilizing several libraries and using a json server which is used as a place to manage data on the tour.id project which is used for the process of creating and reading data.
+The way to run it is by: json-server --watch tour.json -p 3001 -d 2000
+The calling process is given a waiting time of 2 seconds to see the loading process.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
