@@ -13,6 +13,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { fetchPakets, fetchCustoms, fetchIklans, fetchDetailPakets, fetchBlogs, fetchPromos, postPesanPaket, postPesanCustom, fetchPesanPakets, fetchPesanCustoms } from '../redux/ActionCreators';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 const mapStatetoProps = state => {
     return {
@@ -113,17 +114,21 @@ class Main extends Component{
         return (
             <div>
                 <Header />
-                    <Switch>
-                        <Route path="/beranda" component={BerandaPage}/>
-                        <Route exact path="/paket" component={() =>  <Paket pakets={this.props.pakets.pakets} isLoading={this.props.pakets.isLoading} paketError = {this.props.pakets.errMess}  /> } />
-                        <Route path="/paket/:paketId" component={PaketDetailId} />
-                        <Route exact path="/promo" component={() =>  <Promo promos={this.props.promos.promos} isLoading={this.props.promos.isLoading} promosError = {this.props.promos.errMess} /> } />
-                        <Route exact path="/custom" component={() => <Custom postPesanCustom={this.props.postPesanCustom} resetCustomForm={this.props.resetCustomForm} />}/>
-                        <Route exact path="/blog" component={() => <Blog blogs={this.props.blogs.blogs} isLoading={this.props.blogs.isLoading} blogsErrMess = {this.props.blogs.errMess}  /> } />
-                        <Route path="/blog/:blogId" component={ BlogDetailId } />
-                        <Route path="/transaksi" component={TransaksiPage} />
-                        <Redirect to="/beranda"/>
-                    </Switch>
+                <TransitionGroup>
+                    <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+                        <Switch>
+                            <Route path="/beranda" component={BerandaPage}/>
+                            <Route exact path="/paket" component={() =>  <Paket pakets={this.props.pakets.pakets} isLoading={this.props.pakets.isLoading} paketError = {this.props.pakets.errMess}  /> } />
+                            <Route path="/paket/:paketId" component={PaketDetailId} />
+                            <Route exact path="/promo" component={() =>  <Promo promos={this.props.promos.promos} isLoading={this.props.promos.isLoading} promosError = {this.props.promos.errMess} /> } />
+                            <Route exact path="/custom" component={() => <Custom postPesanCustom={this.props.postPesanCustom} resetCustomForm={this.props.resetCustomForm} />}/>
+                            <Route exact path="/blog" component={() => <Blog blogs={this.props.blogs.blogs} isLoading={this.props.blogs.isLoading} blogsErrMess = {this.props.blogs.errMess}  /> } />
+                            <Route path="/blog/:blogId" component={ BlogDetailId } />
+                            <Route path="/transaksi" component={TransaksiPage} />
+                            <Redirect to="/beranda"/>
+                        </Switch>
+                        </CSSTransition>
+                    </TransitionGroup>
                 <Footer />
             </div>
         )

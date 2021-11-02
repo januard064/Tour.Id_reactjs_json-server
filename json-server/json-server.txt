@@ -1,0 +1,3 @@
+This is a json-server that is used as a place to manage data on the tour.id project which is used for the process of creating and reading data.
+The way to run it is by: json-server --watch tour.json -p 3001 -d 2000
+The calling process is given a waiting time of 2 seconds to see the loading process.

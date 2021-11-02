@@ -11,7 +11,8 @@ export class Custom extends Component{
     constructor(props){
         super(props);
         this.state={
-            isModalOpen: false
+            isModalOpen: false,
+            tanggalMulai: '' 
         };
         this.toggleModal = this.toggleModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,9 +24,15 @@ export class Custom extends Component{
         });
     }
 
+    handleChangeText = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value,
+        })
+    }
+
     handleSubmit(values){
         this.toggleModal();
-        this.props.postPesanCustom(values.tujuanWisata, values.tanggalMulai, values.jumlahPeserta, values.kontak, values.metodePembayaran, values.hariPertama, values.hariKedua);
+        this.props.postPesanCustom(values.tujuanWisata, this.state.tanggalMulai, values.jumlahPeserta, values.kontak, values.metodePembayaran, values.hariPertama, values.hariKedua);
         this.props.resetCustomForm();
     }
 
@@ -67,7 +74,7 @@ export class Custom extends Component{
                             <Row className="form-group">
                                 <Col md={6}>
                                     <Label htmlFor="tanggalMulai">Tanggal Berangkat</Label>
-                                    <Control.text model=".tanggalMulai" id="tanggalMulai" name="tanggalMulai"
+                                    {/* <Control.text model=".tanggalMulai" id="tanggalMulai" name="tanggalMulai"
                                         className="form-control"
                                         validators = {{
                                             required
@@ -79,9 +86,10 @@ export class Custom extends Component{
                                         messages = {{
                                             required: 'Required \n',
                                     }}
-                                />
-                                         
+                                /> */}
+                                 <input className="tanggalMulai"  type="date" id="tanggalMulai" name="tanggalMulai" onChange={this.handleChangeText} />
                                 </Col>
+
                                 <Col md={6}>
                                     <Label htmlFor="jumlahPeserta">Jumlah Peserta</Label>
                                     <Control.text model=".jumlahPeserta" id="jumlahPeserta" name="jumlahPeserta"

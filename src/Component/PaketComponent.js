@@ -3,27 +3,29 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Bre
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl'
 import { Loading } from './LoadingComponent';
+import { FadeTransform } from 'react-animation-components'
 
 function RenderPaket({pakets}){
     return(
+                 <FadeTransform
+                in
+                transformProps={{
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }} >
         <Card className="card">
-            
-                <CardImg className="imgcard" width="100%" src={baseUrl + pakets.gambar} />
-                <CardBody>
-                    <CardTitle>{pakets.nama}</CardTitle>
-                    <CardText>{pakets.deskripsiSingkat}</CardText>
-                    <CardSubtitle>
-                        
-                        <div>
-                        Rp.{pakets.biaya}
-                        <Link to ={`/paket/${pakets.id}`} > <Button className="detail">Detail</Button></Link>
-                        </div>
-                    
-                    
-                    </CardSubtitle>
-                </CardBody>
-          
+            <CardImg className="imgcard" width="100%" src={baseUrl + pakets.gambar} />
+            <CardBody>
+                <CardTitle>{pakets.nama}</CardTitle>
+                <CardText>{pakets.deskripsiSingkat}</CardText>
+                <CardSubtitle>
+                    <div>
+                    Rp.{pakets.biaya}
+                    <Link to ={`/paket/${pakets.id}`} > <Button className="detail">Detail</Button></Link>
+                    </div>
+                </CardSubtitle>
+            </CardBody>
         </Card>
+        </FadeTransform>
     );
 }
 

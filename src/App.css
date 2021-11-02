@@ -130,8 +130,15 @@ a{
 }
 .paket{
   margin-top: 20px;
+  width: 100%;
 
 }
+
+.lists {
+  width: 90%;
+  margin-left: 0;
+}
+
 .rencana {
   padding: 15px 15px 15px 50px;
 }
@@ -244,4 +251,34 @@ margin-left: 20px;
 
 .tengah{
   margin-left: 50%;
+}
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%)
+}
+
+.page-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(-00%);
+  transition: all 300ms ease-in;
+}
+
+.tanggalMulai{
+  width: 100%;
+  height: 52%;
+  border: none;
+  border:solid 1px #ccc;
+  border-radius: 5px;
 }

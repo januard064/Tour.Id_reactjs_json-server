@@ -3,20 +3,25 @@ import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbIte
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
+import { FadeTransform } from 'react-animation-components';
 
 function RenderBlog({blogs}){
     return(
+        <FadeTransform
+            in
+            transformProps = {{
+                exitTransform: 'scale(0.5) translateY(-50%)'
+            }}>
         <Card className="card">
-            
-                <CardImg className="imgcard" height="300px" width="100%" src={baseUrl +blogs.gambar} />
-                <CardBody>
-                    <CardTitle>{blogs.judul}</CardTitle>
-                    <CardText>by {blogs.nama}</CardText>
-                    <CardText className="justify">{blogs.blog.substring(0, 200)} <Link className="selengkapnya" to ={`/blog/${blogs.id}`} > Baca selengkapnya</Link></CardText>
-                    
-                </CardBody>
-          
+            <CardImg className="imgcard" height="300px" width="100%" src={baseUrl +blogs.gambar} />
+            <CardBody>
+                <CardTitle>{blogs.judul}</CardTitle>
+                <CardText>by {blogs.nama}</CardText>
+                <CardText className="justify">{blogs.blog.substring(0, 200)} <Link className="selengkapnya" to ={`/blog/${blogs.id}`} > Baca selengkapnya</Link></CardText>
+                
+            </CardBody>
         </Card>
+        </FadeTransform>
     );
 }
 

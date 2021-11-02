@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Button, Modal, ModalHeader, ModalBody, Breadcrumb, BreadcrumbItem} from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
+import { FadeTransform } from 'react-animation-components'
+import { Link } from 'react-router-dom';
 
 export class SuccessPromo extends Component{
     constructor(props){
@@ -21,7 +23,7 @@ export class SuccessPromo extends Component{
     render(){
         return(
             <div>
-            <Button onClick={this.toggleModal} className="detail">Detail</Button>
+            <Button onClick={this.toggleModal} className="detail">Gunakan</Button>
            
 
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
@@ -44,6 +46,11 @@ export class SuccessPromo extends Component{
 
 function RenderPaket({promos}){
     return(
+        <FadeTransform 
+        in 
+        transformProps={{
+            exitTransform: 'scale(0.5) translateY(-50%)'
+        }}>
         <Card className="card" >
             <CardImg className="imgcard" height="150px" width="200px" src={baseUrl +promos.gambar} />
             <CardBody>
@@ -55,6 +62,7 @@ function RenderPaket({promos}){
                 </CardText>
             </CardBody>
         </Card>
+        </FadeTransform>
     );
 }
 
@@ -90,6 +98,17 @@ const Promo = (props) => {
 
     return(
         <div className="container">
+            <div className="row">
+                <Breadcrumb>
+                    <BreadcrumbItem><Link to="beranda">Beranda</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Promo</BreadcrumbItem> <hr />
+                </Breadcrumb>
+            </div>
+            <div className="col-12">
+                <h3>Promo</h3>
+                <p>Promo Menarik Saat Ini</p>
+                <hr />
+            </div>
             <div className="row align-items-start">
                 {promo}
             </div>

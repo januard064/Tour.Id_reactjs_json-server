@@ -3,6 +3,7 @@ import { Card, CardImg, CardText, CardTitle, CardSubtitle, CardImgOverlay,
     Carousel, CarouselItem, CarouselControl, CarouselIndicators} from 'reactstrap';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform } from 'react-animation-components';
 
 function RenderBerandaPaket({item, isLoading, errMess}){
 
@@ -19,17 +20,22 @@ function RenderBerandaPaket({item, isLoading, errMess}){
     }
     else if(item != null){
     return(
-        <Card className="cardBeranda">
-            
-                <CardImg className="imgcardBeranda" src={baseUrl + item.gambar} />
-                <CardImgOverlay >
-                    <div className="squareBeranda col-12">
-                    <CardTitle>{item.nama}</CardTitle>
-                    <CardSubtitle>{item.durasi}</CardSubtitle>
-                    </div>
-                </CardImgOverlay>
-          
-        </Card>
+        <FadeTransform
+            in
+            transformProps = {{
+                exitTransform: 'scale(0.5) translateY(-50%)'
+            }}>
+                <Card className="cardBeranda">
+                    <CardImg className="imgcardBeranda" src={baseUrl + item.gambar} />
+                    <CardImgOverlay >
+                        <div className="squareBeranda col-12">
+                        <CardTitle>{item.nama}</CardTitle>
+                        <CardSubtitle>{item.durasi}</CardSubtitle>
+                        </div>
+                    </CardImgOverlay>
+                </Card>
+        </FadeTransform>
+        
     );
 
 }
@@ -50,8 +56,12 @@ function RenderBerandaCustom({item, isLoading, errMess}){
     }
     else {
     return(
-        <Card className="cardBeranda">
-            
+        <FadeTransform 
+         in 
+         transformProps = {{
+             exitTransform: 'scale(0.5) translateY(-50%)'
+         }} >
+            <Card className="cardBeranda">
                 <CardImg className="imgcardBeranda" src={baseUrl + item.gambar} />
                 <CardImgOverlay >
                     <div className="squareBeranda col-12">
@@ -59,8 +69,9 @@ function RenderBerandaCustom({item, isLoading, errMess}){
                     <CardSubtitle>{item.destinasi}</CardSubtitle>
                     </div>
                 </CardImgOverlay>
-          
-        </Card>
+            </Card>
+        </FadeTransform>
+    
     );
     }
 }
@@ -189,8 +200,13 @@ const Beranda = (props) => {
         <div className="container">
             <div>
                 <div className="col-12">
-                   
+                <FadeTransform
+                    in
+                    transformProps = {{
+                        exitTransform: 'scale(0.5) translateY(-50%)'
+                    }}>
                     <RenderCarousel />
+                </FadeTransform>
                 </div>
             </div>
             <div>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Control, Errors, LocalForm } from 'react-redux-form';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const required= (val) => val && val.length;
 const isNumber = (val) => !isNaN(Number(val));
@@ -172,7 +173,7 @@ function RenderDetailPaket({detailpakets, postPesanPaket, paketId, tujuanWisata}
                             </div>
 
                             <PesanForm paketId={paketId} tujuanWisata={detailpaket.nama} postPesanPaket={postPesanPaket} />
-                            
+
                         </React.Fragment>
                       
                     );
@@ -180,10 +181,6 @@ function RenderDetailPaket({detailpakets, postPesanPaket, paketId, tujuanWisata}
                 
             </div>
             
-            
-               
-              
-       
         );
     } else{
         return(<div>kosong</div>);
@@ -205,6 +202,7 @@ const PaketDetail = (props) => {
     }
     else if(props.pakets != null){
         return(
+          
             <div className="container">
                  <div className="row">
                 <Breadcrumb>
@@ -212,13 +210,22 @@ const PaketDetail = (props) => {
                     <BreadcrumbItem> <Link to="/paket">Paket</Link> </BreadcrumbItem> 
                     <BreadcrumbItem active>{props.pakets.nama}</BreadcrumbItem>
                 </Breadcrumb>
-            </div>
-                <div className="col-12">
-                    <h3>{props.pakets.nama}</h3>
                 </div>
-                <div className="row">
-                    <RenderPaket pakets ={props.pakets} />
-                    <RenderDetailPaket detailpakets = {props.detailpakets} paketId={props.pakets.id} tujuanWisata={props.pakets.nama} postPesanPaket={props.postPesanPaket} />
+
+                <div>
+                    <FadeTransform 
+                        in 
+                        transformProps={{
+                            exitTransform: 'scale(0.5) translateX(-30%)'
+                        }}>
+                    <div className="col-12">
+                        <h3>{props.pakets.nama}</h3>
+                    </div>
+                    <div className="row">
+                        <RenderPaket pakets ={props.pakets} />
+                        <RenderDetailPaket detailpakets = {props.detailpakets} paketId={props.pakets.id} tujuanWisata={props.pakets.nama} postPesanPaket={props.postPesanPaket} />
+                    </div>
+                    </FadeTransform>
                 </div>
             </div>
         );

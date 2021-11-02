@@ -1,0 +1,243 @@
+{
+  "paketWisata": [
+    {
+      "id": 0,
+      "nama": "Pantai Kuta",
+      "gambar": "/images/bali.jpg",
+      "biaya": "200.000",
+      "prioritas": true,
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiSingkat": "Bali menjanjikan pantai yang sangat luar biasa dan tak pernah ditemui di tempat lain"
+    },
+    {
+      "id": 1,
+      "nama": "Candi Borobudur",
+      "gambar": "images/borobudur.jpg",
+      "biaya": "250.000",
+      "prioritas": true,
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiSingkat": "Borobudur merupakan candi terbesar di Indonesia dan merupakan 7 keajaiban dunia"
+    },
+    {
+      "id": 2,
+      "nama": "Pulau Samosir",
+      "gambar": "images/danautoba.jpg",
+      "biaya": "300.000",
+      "prioritas": true,
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiSingkat": "Danau indah yang terbentuk dari letusan gunung vulkanis berjuta-juta tahun yang lalu "
+    },
+    {
+      "id": 3,
+      "nama": "Danau Segara Anak",
+      "gambar": "images/Lombok.jpg",
+      "biaya": "350.000",
+      "prioritas": false,
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiSingkat": "Danau yang menjanjikan pemandangan yang tak akan pernah didapatkan di tempat lain"
+    }
+  ],
+  "paketWisataDetail": [
+    {
+      "id": 0,
+      "paketId": 0,
+      "nama": "Pantai Kuta",
+      "gambar": "images/hotelbali.jpg",
+      "deskripsi": "Bali menjanjikan pantai yang sangat luar biasa dan tak pernah ditemui di tempat lain",
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiDurasi": "Hari 1: ",
+      "hotel": "Korpak Villa",
+      "transportasi": "Tiket pesawat",
+      "asuransi": "Asuransi perjalanan oleh Jasa Marga"
+    },
+    {
+      "id": 1,
+      "paketId": 1,
+      "nama": "Candi Borobudur",
+      "gambar": "images/hotelbali.jpg",
+      "deskripsi": "Borobudur merupakan candi terbesar di Indonesia dan merupakan 7 keajaiban dunia",
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiDurasi": "Hari 1: ",
+      "hotel": "Korpak Villa",
+      "transportasi": "Tiket pesawat",
+      "asuransi": "Asuransi perjalanan oleh Jasa Marga"
+    },
+    {
+      "id": 2,
+      "paketId": 2,
+      "nama": "Pulau Samosir",
+      "gambar": "images/hotelbali.jpg",
+      "deskripsi": "Danau indah yang terbentuk dari letusan gunung vulkanis berjuta-juta tahun yang lalu",
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiDurasi": "Hari 1: ",
+      "hotel": "Korpak Villa",
+      "transportasi": "Tiket pesawat",
+      "asuransi": "Asuransi perjalanan oleh Jasa Marga"
+    },
+    {
+      "id": 3,
+      "paketId": 3,
+      "nama": "Danau Segara Anak",
+      "gambar": "images/hotelbali.jpg",
+      "deskripsi": "Danau yang menjanjikan pemandangan yang tak akan pernah didapatkan di tempat lain",
+      "durasi": "3 Hari 2 Malam",
+      "deskripsiDurasi": "Hari 1: ",
+      "hotel": "Korpak Villa",
+      "transportasi": "Tiket pesawat",
+      "asuransi": "Asuransi perjalanan oleh Jasa Marga"
+    }
+  ],
+  "customWisata": [
+    {
+      "id": 0,
+      "nama": "Bali",
+      "gambar": "images/KotaBali.jpg",
+      "biaya": "200.000",
+      "prioritas": true,
+      "destinasi": "Pantai-pantai, Pura, Taman Nasional, Danau, Taman Gajah"
+    },
+    {
+      "id": 1,
+      "nama": "Raja Ampat",
+      "gambar": "images/RajaAmpat.jpg",
+      "biaya": "250.000",
+      "prioritas": true,
+      "destinasi": "Diving, Snorkeling, Tracking, Bird Watching, Sunset"
+    },
+    {
+      "id": 2,
+      "nama": "Danau Toba",
+      "gambar": "images/DestinasiDanauToba.jpg",
+      "biaya": "300.000",
+      "prioritas": true,
+      "destinasi": "Pulau Samosir, Pusuk Buhit, Sigale-gale, Air Terjun, Desa Wisata"
+    },
+    {
+      "id": 3,
+      "nama": "Lombok",
+      "gambar": "images/DestinasiLombok.jpg",
+      "biaya": "350.000",
+      "prioritas": false,
+      "destinasi": "Pantai-pantai, Batu Payung, Bukit Merese, Pura Meru, Gili"
+    }
+  ],
+  "promo": [
+    {
+      "id": 0,
+      "nama": "Pantai Kuta",
+      "gambar": "images/promo2.jpg",
+      "diskon": "10%"
+    },
+    {
+      "id": 1,
+      "nama": "Pulau Samosir",
+      "gambar": "images/danautoba.jpg",
+      "diskon": "10%"
+    },
+    {
+      "id": 2,
+      "nama": "Danau Segara Anak",
+      "gambar": "images/lombok.jpg",
+      "diskon": "20%"
+    }
+  ],
+  "iklan": [
+    {
+      "id": 0,
+      "nama": "Candi Borobudur",
+      "gambar": "images/iklan1.jpg",
+      "tayang": true,
+      "iklan": "Menikmati Sunset di Candi Borobudur dengan Diskon 40%"
+    },
+    {
+      "id": 1,
+      "nama": "Pantai Bali",
+      "gambar": "images/iklan2.jpg",
+      "tayang": true,
+      "iklan": "Sunset di Pura Bali dengan Diskon 40%"
+    },
+    {
+      "id": 2,
+      "nama": "Pulau Kelor, Komodo",
+      "gambar": "images/iklan3.jpg",
+      "tayang": true,
+      "iklan": "Keliling Pulau Kelor di Pulau Komodo dengan Diskon 20%"
+    }
+  ],
+  "blog": [
+    {
+      "id": 0,
+      "nama": "Nama Awal",
+      "destinasi": "Pulau Komodo",
+      "judul": "Wisata Impian di Pulau Komodo",
+      "gambar": "images/blog1.jpg",
+      "blog": "Liburan, siapa yang tidak suka? Hampir semua orang membutuhkan liburan untuk recharge tenaga dan pikiran setelah sepekan bekerja atau hanya menghabiskan waktu bersama dengan pasangan Anda, bahkan di era sekarang begitu banyak orang liburan untuk dijadikan konten. Nah, ini kerennya  liburan di zaman sekarang daripada zaman dulu selain bisa berliburan dan mengeksplor berbagai tempat kita juga bisa menghasilkan penghasilan tambahan Ketika Anda memiliki kesempatan untuk berlibur jangan tunda waktu liburan Anda karena dengan liburan bisa menghilangkan stress dan membuat anda merasa lebih baik dan pasti nya lebih bersemangat lagi dalam bekerja. Liburan tidak harus selalu bersama keluarga atau bersama teman-teman sepermainan, liburan akan tetap seru walaupun anda hanya berpergian sendiri (ini bukan berarti saya jomblo ya...?). Yang penting stamina kuat cuy.... Terkadang dengan berliburan sendiri anda bisa lebih lepas lagi menjadi diri anda dan bebas melakukan apapun yang anda ingin lakukan tanpa rasa canggug Untuk saya pribadi, liburan impian yang ingin saya lakukan adalah liburan ke luar kota yang agak jauh dari tempat saya tinggal. Liburan yang dilakukan selama beberapa hari. Dengan begitu liburan akan lebih terasa dan berkesan, selain itu kita juga bisa melihat banyak hal baru seperti tempat wisata, kebudayaan setempat dan kuliner yang berbeda dari tempat kita berasal. Pulau komodo atau Taman Nasional Komodo (Taman Nasional Komodo dinyatakan sebagai a World Heritage Site and Man and Biosphere Reserve oleh UNESCO tahun 1986). Kawasan Taman Nasional Komodo terletak di Nusa Tenggara Timur berada antara Pulau Sumbawa dan Pulau Flores, Kabupaten Manggarai Barat Provinsi Nusa Tenggara Timur. Pulau ini menjadi tempat liburan impian saya sejak dulu. Entah kenapa setiap kali teman saya bertanya “Jika kamu punya kesempatan untuk berliburan ke tempat mana kamu ingin pergi?” Dan jawab saya selalu ke pulau komodo. Entah ini panggilan jiwa atau panggilan alam ehehehe udah kayak anak indigo aja ya? Saya selalu berpikiran untuk traveling ke pulau komodo dan melihat biawak raksasa ini secara langsung. Hal ini sangat menarik bagi saya atau mungkin bagi anda juga? melihat kehidupan komodo di alam bebas dan bisa ber-swafie dengan komodo, uhuy...... deg-degan juga sih karena katanya komodo itu mempunyai indera penciuman yang begitu tajam dan ia bisa mencium bau anyir darah dan bisa berubah sikap menjadi agresif (huhuhu serem ya?). Jadi, tetap hati-hati yang guys jika kalian berkunjung ke pulau komodo tetap jaga jarak dan ikuti arahan pemandu wisata. Di pulau komodo sendiri selain bisa melihat kehidupan alam komodo kita juga bisa melakukan snorkeling melihat indahnya biota laut dan trekking di bukit Gili Lawa untuk menikmati senja. Ada juga lho pulau kelelawar yang dihuni ribuan kelelawa liar, Labuan Bajo dan Pulau Alor eh jangan lupa pink beach juga harus masuk list ya.... Wihhhh keren kan? Nah, yang jadi problema sekarang adalah ketika kita travelling ke luar kota kita memang membutuhkan budget liburan lebih besar dan persiapan yang lebih ribet. Ketika memilih hal ini ada banyak hal yang juga harus kita lakukan sebagai persiapan liburan, seperti memesan tiket transportasi, hotel, packing outfit liburan yang kece untuk dijadikan konten (tetap ya, cari cuan) dan hal lain-lainnya. Jangan lupa juga untuk menyiapkan stamina dengan baik, agar perjalanan bisa di lakukan dengan nyaman dan menyenangkan. Jangan sampai udah buat list liburan, eh pas waktu liburan datang malah sakit, amsiongg deh. (Sumber: https://www.reddoorz.com/blog/id/places-to-visit/travelling-impian-ke-pulau-komodo)."
+    },
+    {
+      "id": 1,
+      "nama": "Nama Akhir",
+      "destinasi": "Air Terjun Sipiso Piso",
+      "judul": "Asyiknya Menikmati Air Terjun Sipiso Piso",
+      "gambar": "images/blog2.jpg",
+      "blog": "Berkunjung ke Sumatera Utara tidak lengkap bila kamu belum berkunjung ke objek wisata unggulannya selain Danau Toba. Ada yang tahu tempat wisata yang dimaksud? Kalau ada yang menjawab Air Terjun Sipiso Piso… selamat kamu benar!.Air terjun yang terletak di Kabupaten Karo ini mendapatkan predikat sebagai air terjun tertinggi keempat di Indonesia, karena ketinggian Air Terjun Sipiso Piso ini mencapai 120 meter. Selain tingginya yang menakjubkan, air terjun ini juga memiliki pemandangan alam yang memesona. Itulah mengapa tempat ini selalu ramai dikunjungi oleh wisatawan baik domestik maupun mancanegara. Air terjun yang dikelola oleh Pemerintah Kabupaten Karo ini memiliki arti namanya tersendiri. Nama air terjun ini berasal dari kata piso yang artinya pisau. Hubungannya apa coba sama air terjun? Usut punya usut nama ini berasal dari derasnya air yang terjatuhan itu mirip sama bilah pisau yang tajam. Selain itu, nama piso juga diambil dari curamnya jurang di sekitar air terjun jika dilihat dari atas bukit. Makanya orang sekitar menyebutnya piso dari Tanah karo. Lokasi Air Terjun Sipiso Piso berada di Desa Tongging, Kecamatan Merek, Kabupaten Karo, Sumatera Utara. Kamu bisa menuju ke sana dengan menggunakan transportasi umum atau kendaraan pribadi. Kalau kamu berangkat dari Medan, kamu bisa menuju Kota Kabanjahe menggunakan bus atau kendaraan pribadi dengan waktu tempuh sekitar 2 jam. Dari sana kamu bisa meneruskan perjalanan menuju Danau Toba, perjalanan kamu kali ini memakan waktu sekitar 30 menit. Jarak yang harus kamu tempuh kalau dari Kota Medan sekitar 70 km. Sedangkan kalau dari Kota Brastagi sekitar 35 km dan 25 km dari Kota Kabanjahe. Jauh juga ya? Tenang saja, jalan menuju Air Terjun Sipiso Piso ini sudah diaspal jadi perjalananmu pasti lebih mudah dan menyenangkan. Indahnya Air Terjun Sipiso Piso memang tidak perlu di ragukan lagi. Letaknya yang berada di perbukitan dan di kelilingi hutan pinus di punggungnya menjadikan air terjun ini memiliki keindahan yang mengagumkan. Ditambah dengan hamparan Danau Toba yang pasti menambah eloknya. Air terjun ini berasal dari aliran Sungai Pajanabolon dan bermuara ke Danau Toba. Dari kejauhan sebenarnya kamu sudah bisa menikmati keindahannya. Kamu bisa melihat air nampak berjatuhan di antara tebing secara vertikal. Saat pertama kali kamu tiba di sana sebaiknya kamu mampir dulu ke gardu pandang Air Terjun Sipiso Piso Medan. Dari tempat itu kamu bisa menikmati indahnya Air Terjun Sipiso Piso dari kejauhan, hamparan Tanah Karo yang memukai, dan jangan lupakan juga Pulau Samosir yang ada di tengah Danau Toba. Dijamin pemandangan ini sukses membuatmu diam terpaku karena keindahannya. Tanganmu pasti dengan gesit akan membidik objek yang mengagumkan ini. Puas menikmati gardu pandang, sebaiknya kamu bergegas untuk menuruni anak tangga untuk bisa menikmati Sipiso Piso dari dekat. Di sini nih kamu butuh tenaga yang ekstra, karena apa? Kamu harus menaklukkan beratus-ratus anak tangga untuk mencapai dasar air terjun. Selain itu kamu juga harus punya nyali yang tinggi, soalnya jalan curam dan berkelok-kelok. Jangan khawatir jenuh, selama menuruni tangga menuju dasar air terjun kamu akan ditemani dengan indahnya Danau Toba dan pemandangan hijau di sekitarnya. Normalnya kamu butuh waktu sekitar 30-45 menit untuk sampai ke dasar air terjun. Kalau perkara naiknya, jelas saja lebih lama dari itu. Tetapi, semua balik lagi ke kamu. Kalau stamina kamu bagus pasti bisa lebih cepat sampai dan saat saat pulang juga demikian. Buat kamu yang merasa lelah setelah menuruni tangga, lelahmu akan terbayar dengan keindahan air terjun yang tersaji. Kamu akan menemukan sebuah air terjun megah yang dikelilingi oleh perbukitan dan memiliki pelangi abadi di dasarnya. Sungguh keindahan yang tiada tara!(Sumber https://blog.airpaz.com/id/asyiknya-menikmati-wisata-di-air-terjun-sipiso-piso-medan/)"
+    },
+    {
+      "id": 2,
+      "nama": "Nama Lengkap",
+      "destinasi": "Pulau Mursala",
+      "judul": "Menikmati Keindahan Pulau Mursala",
+      "gambar": "images/blog3.jpg",
+      "blog": "Pulau Mursala merupakan pulau yang sangat indah terletak di kabupaten Tapanuli Tengah, Sumatera Utara. Uniknya di pulau ini terdapat air terjun yang langsung jatuh ke laut. Konon katanya disinilah syuting film “King Kong” yang dirilis pada tahun 2005. Dan fakta uniknya lagi, air terjun yang langsung jatuh ke laut hanya ada 2 di Indonesia, yakni di Pulau Mursala dan Air Terjun Kahatola di Halmahera Barat. Air Terjun Mursala memiliki ketinggian sekitar 35 m. Menurut cerita orang disana, air terjun ini berasal dari Danau Toba yang terletak di kabupaten Samosir yang mengalir melalui bawah tanah dan bawah laut. Mustahil rasanya jika dibayangkan. Oh ya, Kepulauan Mursala ini memiliki banyak pulau yang bisa kita kunjungi, yakni Pulau Putri, Pulau Jonggi, Pulau Talam, Pulau Kalimantung, Pulau Silabu-labu, Pulau Sitaban dan lain sebagainya. Mendengar cerita diatas, sebenarnya sejak lama saya ingin liburan ke Pulau Mursala. Dan Alhamdulillah akhirnya saya bisa juga pergi kesana, tepatnya pada 17 Agustus 2018 kemarin di hari libur nasional maka saya manfaatkan untuk liburan. Saya pun ikut dalam rombongan open trip yang diadakan oleh salah satu komunitas pecinta wisata yang ada di Sumatera Utara. Menempuh perjalanan selama 8 jam dari kota Medan, kami memulai perjalanan pada pukul 24.00 Wib. Dengan titik kumpul di pintu IV USU, akhirnya kami mulai melakukan perjalanan malam menggunakan 4 mobil jenis Kijang Inova. Ada sekitar 25 orang dalam rombongan open trip Pulau Mursala ini. Dan kamipun menyatu dan saling berkenalan satu sama lainnya. Rute perjalanan yang kami lewati adalah melalui kota Medan – Tebing Tinggi – Pematangsiantar – Parapat – Balige – Siborong-borong – Tarutung – Sibolga – Pandan. Namun sebelum sampai ke kota Pandan, kami berhenti sejenak di goa peninggalan Belanda yang bernama “Terowongan Batu Lobang Sibolga”, tepatnya di Jl. Sibolga – Tarutung, Simaninggir, kabupaten Tapanuli Tengah atau sebelum kota Sibolga. Setelah puas melihat terowongan tersebut, kami pun melanjutkan perjalanan menuju kota Pandan. Ternyata kami sudah ditunggu oleh kapal penjemputan yang akan membawa kami ke kepulauan Mursala. Kapal yang akan membawa kami ke Pulau Mursala ini sudah kami pesan sebelumnya. Kapal ini bersandar di Pantai Pandan, namun sebelum berangkat saya dan rombongan terlebih dahulu bergegas ke ruang ganti (toilet umum) untuk mengganti pakaian. Disnilah waktu yang tepat untuk mengenakan pakaian renang, karena saat diatas kapal tidak ada ruang ganti untuk mengganti pakaian saat anda ingin berenang nantinya. Sebelum kapal berangkat, kami semua terlebih dahulu mengenakan baju pelampung yang disediakan oleh kru kapal tersebut. Perjalanan menggunakan kapal motor ke lokasi Air Terjun Mursala sekitar 2 jam lamanya. Selama di perjalanan, kita akan merasakan sedikit guncangan ombak yang membelah kapal saat melaju, apalagi saat itu cuaca sedang mendung. Setelah puas melihat terowongan tersebut, kami pun melanjutkan perjalanan menuju kota Pandan. Ternyata kami sudah ditunggu oleh kapal penjemputan yang akan membawa kami ke kepulauan Mursala. Kapal yang akan membawa kami ke Pulau Mursala ini sudah kami pesan sebelumnya. Kapal ini bersandar di Pantai Pandan, namun sebelum berangkat saya dan rombongan terlebih dahulu bergegas ke ruang ganti (toilet umum) untuk mengganti pakaian. Disnilah waktu yang tepat untuk mengenakan pakaian renang, karena saat diatas kapal tidak ada ruang ganti untuk mengganti pakaian saat anda ingin berenang nantinya. Sebelum kapal berangkat, kami semua terlebih dahulu mengenakan baju pelampung yang disediakan oleh kru kapal tersebut. Perjalanan menggunakan kapal motor ke lokasi Air Terjun Mursala sekitar 2 jam lamanya. Selama di perjalanan, kita akan merasakan sedikit guncangan ombak yang membelah kapal saat melaju, apalagi saat itu cuaca sedang mendung. (Sumber: https://www.jiwapetualang.com/pengalaman-ikut-open-trip-ke-pulau-mursala/)."
+    }
+  ],
+  "pesanPaket": [
+    {
+      "paketId": 0,
+      "tujuanWisata": "Candi Borobudur",
+      "jumlahPeserta": "4",
+      "metodePembayaran": "Dana",
+      "tanggalpesan": "2021-09-07T06:08:27.767Z",
+      "id": 0
+    },
+    {
+      "paketId": 2,
+      "tujuanWisata": "Pulau Samosir",
+      "jumlahPeserta": "1",
+      "metodePembayaran": "Transfer Bank",
+      "tanggalpesan": "2021-11-02T14:37:01.226Z",
+      "id": 1
+    },
+    {
+      "paketId": 1,
+      "tujuanWisata": "Candi Borobudur",
+      "jumlahPeserta": "2",
+      "metodePembayaran": "OVO",
+      "tanggalpesan": "2021-11-02T15:21:37.615Z",
+      "id": 2
+    }
+  ],
+  "pesanCustom": [
+    {
+      "tujuanWisata": "Pulau Kodomo",
+      "tanggalMulai": "2021-11-06",
+      "jumlahPeserta": "3",
+      "kontak": "08883457774",
+      "metodePembayaran": "OVO",
+      "hariPertama": "Berenang",
+      "hariKedua": "Sunset view",
+      "tanggalpesan": "2021-11-02T14:45:21.556Z",
+      "id": 3
+    },
+    {
+      "tujuanWisata": "Pulau Samosir",
+      "tanggalMulai": "2021-11-03",
+      "jumlahPeserta": "2",
+      "kontak": "08883457774",
+      "metodePembayaran": "Dana",
+      "hariPertama": "Sunset",
+      "hariKedua": "Berenang",
+      "tanggalpesan": "2021-11-02T15:23:09.367Z",
+      "id": 4
+    }
+  ]
+}

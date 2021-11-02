@@ -3,6 +3,7 @@ import { Card, CardText, CardBody, Breadcrumb, BreadcrumbItem} from 'reactstrap'
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 import { Loading } from './LoadingComponent';
+import { FadeTransform } from 'react-animation-components'
 
 function RenderBlogDetail({blogs}){
     return(
@@ -38,7 +39,13 @@ const BlogDetail = (props) => {
                 </Breadcrumb>
             </div>
                 <div className="row">
+                <FadeTransform
+            in
+            transformProps = {{
+                exitTransform: 'scale(0.5) translateX(-30%)'
+            }}>
                     <RenderBlogDetail blogs ={props.blogs} />
+                    </FadeTransform>
                 </div>
             </div>
         );
